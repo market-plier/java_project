@@ -1,8 +1,10 @@
 package com.example.demo.model;
+
 public class Person {
 
     private String firstName;
     private String lastName;
+    private int id;
 
     public Person() {
 
@@ -11,6 +13,14 @@ public class Person {
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {
